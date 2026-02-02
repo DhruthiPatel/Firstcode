@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>💕 For You 💕</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", "Comic Sans MS", cursive;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(135deg, #fde2e4, #e0f2fe, #fae8ff);
+}
+
+/* ===== SPARKLES ===== */
+.sparkle {
+  position: fixed;
+  pointer-events: none;
+  font-size: 14px;
+  animation: fade 0.8s linear forwards;
+}
+
+@keyframes fade {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(-15px); }
+}
+
+/* ===== FLOATING HEARTS & CLOUDS ===== */
+.bg span {
+  position: absolute;
+  animation: float 14s linear infinite;
+  opacity: 0.6;
+}
+
+@keyframes float {
+  from { transform: translateY(110vh); }
+  to { transform: translateY(-10vh); }
+}
+
+/* ===== PAGE 1 ===== */
+#page1 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3.2re
